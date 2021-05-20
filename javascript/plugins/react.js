@@ -18,6 +18,7 @@ module.exports = {
     "no-underscore-dangle": ["error", {
       "allow": ["__INITIAL_STATE__", "__REDUX_DEVTOOLS_EXTENSION__"],
     }],
+    "class-methods-use-this": "off",
     "react/destructuring-assignment": "off",
     "react/jsx-curly-spacing": ["error", { "when": "never", "children": { "when": "always" }}],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
