@@ -6,6 +6,8 @@
  * @copyright: Copyright (c) 2018 TINYMINS.
  */
 
+var errors = require("eslint-config-airbnb-base/rules/errors");
+
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
@@ -109,7 +111,13 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "no-extra-parens": "off",
-    "@typescript-eslint/no-extra-parens": "error",
+    "@typescript-eslint/no-extra-parens": errors.rules['no-extra-parens'] || ["off", "all", {
+      conditionalAssign: true,
+      nestedBinaryExpressions: false,
+      returnAssign: false,
+      ignoreJSX: "all", // delegate to eslint-plugin-react
+      enforceForArrowConditionals: false,
+    }],
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-misused-new": "error",
