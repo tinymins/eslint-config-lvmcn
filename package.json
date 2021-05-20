@@ -28,5 +28,10 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "object.assign": "^4.1.2",
     "object.entries": "^1.1.2"
-  }
+  },
+  "files": [
+    "javascript",
+    "typescript",
+    "README.md"
+  ]
 }
