@@ -108,6 +108,8 @@ module.exports = {
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-extraneous-class": "error",
+    "no-extra-parens": "off",
+    "@typescript-eslint/no-extra-parens": "error",
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-misused-new": "error",
