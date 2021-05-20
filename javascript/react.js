@@ -20,7 +20,7 @@ module.exports = {
     }],
     "react/destructuring-assignment": "off",
     "react/jsx-curly-spacing": ["error", { "when": "never", "children": { "when": "always" }}],
-    "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/jsx-fragments": ["error", "element"],
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-no-undef": "error",
@@ -36,13 +36,13 @@ module.exports = {
     "react/no-unescaped-entities": "error",
     "react/no-unknown-property": "error",
     "react/sort-comp": ["error", {
-      order: [
-        'constructor',
-        'state',
-        'everything-else',
-        'lifecycle',
-        '/^render.+$/',
-        'render',
+      "order": [
+        "constructor",
+        "state",
+        "everything-else",
+        "lifecycle",
+        "/^render.+$/",
+        "render",
       ]
     }],
     "react/state-in-constructor": "off",
