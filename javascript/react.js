@@ -7,44 +7,16 @@
  */
 
 // http://eslint.org/docs/user-guide/configuring
+/**
+ * JavaScript react files.
+ */
 module.exports = {
-  plugins: [
-    "react",
-  ],
   extends: [
-    require.resolve("eslint-config-airbnb/rules/react"),
+    require.resolve("./plugins/base.js"),
+    require.resolve("./plugins/import.js"),
+    require.resolve("./plugins/unicorn.js"),
+    require.resolve("./plugins/react.js"),
+    require.resolve("./plugins/unused-imports.js"),
   ],
-  rules: {
-    "no-underscore-dangle": ["error", {
-      "allow": ["__INITIAL_STATE__", "__REDUX_DEVTOOLS_EXTENSION__"],
-    }],
-    "react/destructuring-assignment": "off",
-    "react/jsx-curly-spacing": ["error", { "when": "never", "children": { "when": "always" }}],
-    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-    "react/jsx-fragments": ["error", "element"],
-    "react/jsx-no-duplicate-props": "error",
-    "react/jsx-no-undef": "error",
-    "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
-    "react/jsx-props-no-spreading": "off",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react/jsx-uses-vars": "error",
-    "react/no-array-index-key": "off",
-    "react/no-did-update-set-state": "off",
-    "react/no-typos": "error",
-    "react/no-unescaped-entities": "error",
-    "react/no-unknown-property": "error",
-    "react/sort-comp": ["error", {
-      "order": [
-        "constructor",
-        "state",
-        "everything-else",
-        "lifecycle",
-        "/^render.+$/",
-        "render",
-      ]
-    }],
-    "react/state-in-constructor": "off",
-  },
+  rules: {},
 };

@@ -7,12 +7,15 @@
  */
 
 // http://eslint.org/docs/user-guide/configuring
+/**
+ * TypeScript react files.
+ */
 module.exports = {
-  plugins: [
-    "react",
-  ],
   extends: [
-    require.resolve("../javascript/react.js"),
+    require.resolve("./plugins/base.js"),
+    require.resolve("./plugins/import.js"),
+    require.resolve("./plugins/react.js"),
+    require.resolve("./plugins/unused-imports.js"),
   ],
   rules: {},
 };

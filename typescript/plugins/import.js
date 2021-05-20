@@ -9,10 +9,10 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "unicorn",
+    "import",
   ],
   extends: [
-    require.resolve("../javascript/unicorn.js"),
+    require.resolve("../../javascript/plugins/import.js"),
   ],
   rules: {},
 };

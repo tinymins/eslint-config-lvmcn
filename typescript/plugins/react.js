@@ -9,10 +9,10 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "import",
+    "react",
   ],
   extends: [
-    require.resolve("../javascript/import.js"),
+    require.resolve("../../javascript/plugins/react.js"),
   ],
   rules: {},
 };

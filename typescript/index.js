@@ -8,15 +8,13 @@
 
 // http://eslint.org/docs/user-guide/configuring
 /**
- * Full plugin configure.
+ * TypeScript common files.
  */
 module.exports = {
   extends: [
-    require.resolve("./base.js"),
-    require.resolve("./import.js"),
-    require.resolve("./react.js"),
-    require.resolve("./unused-imports.js"),
+    require.resolve("./plugins/base.js"),
+    require.resolve("./plugins/import.js"),
+    require.resolve("./plugins/unused-imports.js"),
   ],
-  rules: {
-    "class-methods-use-this": "off",},
+  rules: {},
 };
