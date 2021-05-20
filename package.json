@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/tinymins/eslint-config-lvmcn/issues"
   },
-  "homepage": "https://github.com/tinymins/eslint-config-lvmcn#readme"
+  "homepage": "https://github.com/tinymins/eslint-config-lvmcn#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "object.assign": "^4.1.2",
+    "object.entries": "^1.1.2"
+  }
 }
