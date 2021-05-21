@@ -7,16 +7,12 @@
  */
 
 // http://eslint.org/docs/user-guide/configuring
-/**
- * JavaScript common files.
- */
 module.exports = {
+  plugins: [
+    "promise",
+  ],
   extends: [
-    require.resolve("./base"),
-    require.resolve("./plugins/import"),
-    require.resolve("./plugins/promise"),
-    require.resolve("./plugins/unicorn"),
-    require.resolve("./plugins/unused-imports"),
+    "plugin:promise/recommended",
   ],
   rules: {},
 };
