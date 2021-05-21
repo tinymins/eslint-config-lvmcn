@@ -12,9 +12,10 @@
  */
 module.exports = {
   extends: [
-    require.resolve("./plugins/base.js"),
-    require.resolve("./plugins/import.js"),
-    require.resolve("./plugins/unused-imports.js"),
+    require.resolve("./base"),
+    require.resolve("./plugins/import"),
+    require.resolve("./plugins/unicorn"),
+    require.resolve("./plugins/unused-imports"),
   ],
   rules: {},
 };

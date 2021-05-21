@@ -12,11 +12,8 @@
  */
 module.exports = {
   extends: [
-    require.resolve("./plugins/base.js"),
-    require.resolve("./plugins/import.js"),
-    require.resolve("./plugins/unicorn.js"),
-    require.resolve("./plugins/react.js"),
-    require.resolve("./plugins/unused-imports.js"),
+    require.resolve("."),
+    require.resolve("./plugins/react"),
   ],
   rules: {},
 };

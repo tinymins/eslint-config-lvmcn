@@ -12,7 +12,7 @@ module.exports = {
     "unicorn",
   ],
   extends: [
-    require.resolve("../../javascript/plugins/unicorn.js"),
+    require.resolve("../../javascript/plugins/unicorn"),
   ],
   rules: {},
 };

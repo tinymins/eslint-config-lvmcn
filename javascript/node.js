@@ -8,14 +8,12 @@
 
 // http://eslint.org/docs/user-guide/configuring
 /**
- * JavaScript common files.
+ * JavaScript node files.
  */
 module.exports = {
   extends: [
-    require.resolve("./base"),
-    require.resolve("./plugins/import"),
-    require.resolve("./plugins/unicorn"),
-    require.resolve("./plugins/unused-imports"),
+    require.resolve("."),
+    require.resolve("./plugins/node"),
   ],
   rules: {},
 };

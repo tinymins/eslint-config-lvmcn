@@ -26,7 +26,7 @@ module.exports = {
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
-    require.resolve("../../javascript/plugins/base.js"),
+    require.resolve("../../javascript/plugins/base"),
   ],
   rules: {
     "arrow-parens": "off",

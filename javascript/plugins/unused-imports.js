@@ -9,7 +9,7 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "@typescript-eslint",
+    "unused-imports",
   ],
   rules: {
     "unused-imports/no-unused-imports": "error",

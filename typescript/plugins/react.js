@@ -12,7 +12,7 @@ module.exports = {
     "react",
   ],
   extends: [
-    require.resolve("../../javascript/plugins/react.js"),
+    require.resolve("../../javascript/plugins/react"),
   ],
   rules: {},
 };

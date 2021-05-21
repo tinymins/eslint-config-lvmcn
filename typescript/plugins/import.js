@@ -12,7 +12,7 @@ module.exports = {
     "import",
   ],
   extends: [
-    require.resolve("../../javascript/plugins/import.js"),
+    require.resolve("../../javascript/plugins/import"),
   ],
   rules: {},
 };
