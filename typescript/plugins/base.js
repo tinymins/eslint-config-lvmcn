@@ -29,7 +29,9 @@ module.exports = {
     require.resolve("../../javascript/plugins/base"),
   ],
   rules: {
-    "arrow-parens": "off",
+    // https://github.com/typescript-eslint/typescript-eslint/issues/14
+    // This is fixed in eslint v7.4.0
+    // "arrow-parens": "off",
     "valid-jsdoc": ["error", {
       "requireParamType": false,
       "requireReturn": false,
