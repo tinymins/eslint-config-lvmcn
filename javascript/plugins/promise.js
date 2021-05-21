@@ -14,5 +14,7 @@ module.exports = {
   extends: [
     "plugin:promise/recommended",
   ],
-  rules: {},
+  rules: {
+    "promise/no-nesting": "off",
+  },
 };
