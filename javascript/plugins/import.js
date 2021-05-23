@@ -23,6 +23,7 @@ module.exports = {
       "ts": "never",
       "tsx": "never",
       "tx": "never",
+      'vue': 'never',
     }],
     // "import/no-cycle": ["error", { maxDepth: 1 }],
     "import/no-cycle": "off",
