@@ -16,7 +16,7 @@ module.exports = {
   ],
   rules: {
     "promise/no-nesting": "off",
-    "no-promise-in-callback": "off",
-    "no-callback-in-promise": "off",
+    "promise/no-promise-in-callback": "off",
+    "promise/no-callback-in-promise": "off",
   },
 };
