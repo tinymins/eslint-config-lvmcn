@@ -6,6 +6,9 @@
  * @copyright: Copyright (c) 2018 TINYMINS.
  */
 
+var assign = require('object.assign');
+var base = require('./base.js');
+
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
@@ -15,10 +18,18 @@ module.exports = {
     require.resolve("eslint-config-airbnb/rules/react"),
   ],
   rules: {
+    "camelcase": ["error", assign(
+      {},
+      base.rules['camelcase'][1],
+      {
+        // allow UNSAFE_XXX
+        "allow": base.rules['camelcase'][1].allow.concat(["^UNSAFE_"]),
+      },
+    )],
+    "class-methods-use-this": "off",
     "no-underscore-dangle": ["error", {
       "allow": ["__INITIAL_STATE__", "__REDUX_DEVTOOLS_EXTENSION__"],
     }],
-    "class-methods-use-this": "off",
     "react/destructuring-assignment": "off",
     "react/jsx-curly-spacing": ["error", { "when": "never", "children": { "when": "always" }}],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],

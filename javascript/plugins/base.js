@@ -36,7 +36,11 @@ module.exports = {
     "block-spacing": "error",
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "callback-return": "off",
-    "camelcase": ["error", { "properties": "always" }],
+    "camelcase": ["error", {
+      "properties": "always",
+      // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
+      "allow": ["^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$", "^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$"],
+    }],
     "capitalized-comments": "error",
     "class-methods-use-this": "off",
     "comma-dangle": "error",

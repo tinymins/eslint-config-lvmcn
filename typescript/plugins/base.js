@@ -60,7 +60,8 @@ module.exports = {
         format: ["camelCase", "PascalCase", "UPPER_CASE"],
         filter: {
           // you can expand this regex as you find more cases that require quoting that you want to allow
-          regex: "(^__INITIAL_STATE__$|^__REDUX_DEVTOOLS_EXTENSION__$)",
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
           match: false
         },
         leadingUnderscore: "allow",
@@ -86,7 +87,8 @@ module.exports = {
         format: ["camelCase", "PascalCase"],
         filter: {
           // you can expand this regex as you find more cases that require quoting that you want to allow
-          regex: "(^__INITIAL_STATE__$|^__REDUX_DEVTOOLS_EXTENSION__$)",
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
           match: false
         },
         leadingUnderscore: "allow",
