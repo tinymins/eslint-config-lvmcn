@@ -46,7 +46,7 @@ function mapRules(rules, maps) {
   for (var i = 0; i < maps.length; i++) {
     var map = maps[i];
     var sname = map[1];
-    var dname = map[2];
+    var dname = map[0];
     var mapper = map[2];
     var rule = rules[sname];
     if (rule) {
