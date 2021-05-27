@@ -84,6 +84,20 @@ module.exports = {
       },
       {
         selector: [
+          "objectLiteralMethod", // matches any object literal method. Also matches properties that have direct function expression or arrow function expression values. Does not match accessors.
+        ],
+        format: ["camelCase", "PascalCase"],
+        filter: {
+          // you can expand this regex as you find more cases that require quoting that you want to allow
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
+          match: false
+        },
+        leadingUnderscore: "allow",
+        trailingUnderscore: "forbid",
+      },
+      {
+        selector: [
           "function", // matches any named function declaration or named function expression.
           "method", // matches any object, class, or object type method. Also matches properties that have direct function expression or arrow function expression values. Does not match accessors.
           "accessor", // matches any accessor.
