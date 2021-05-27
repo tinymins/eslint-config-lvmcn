@@ -40,6 +40,7 @@ module.exports = {
     ["@typescript-eslint/no-unused-vars", "no-unused-vars"],
     ["@typescript-eslint/no-use-before-define", "no-use-before-define"],
     ["@typescript-eslint/object-curly-spacing", "object-curly-spacing"],
+    ["@typescript-eslint/space-infix-ops", "space-infix-ops"],
   ]), {
     "valid-jsdoc": ["error", {
       requireParamType: false,
