@@ -8,7 +8,6 @@
 
 var assign = require("object.assign");
 var ruleUtils = require("../../utils/rule.js");
-var javascriptBaseRules = require("../../javascript/plugins/base.js").rules;
 
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
