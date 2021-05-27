@@ -32,7 +32,13 @@ function merge(mixed1, mixed2) {
     type1 === 'object' && mixed1 !== null && !Array.isArray(mixed1)
     && type2 === 'object' && mixed2 !== null && !Array.isArray(mixed2)
   ) {
-    return assign({}, mixed1, mixed2);
+    var res = assign({}, mixed1);
+    for (var k in mixed2) {
+      if (Object.hasOwnProperty.call(mixed2, k)) {
+        res[k] = merge(res[k], mixed2[k]);
+      }
+    }
+    return res;
   }
   return mixed2;
 }
