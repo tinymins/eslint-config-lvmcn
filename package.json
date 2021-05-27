@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lvmcn",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Emil's ESLint config with TypeScript support",
   "scripts": {},
   "repository": {
