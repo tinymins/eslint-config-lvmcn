@@ -6,7 +6,9 @@
  * @copyright: Copyright (c) 2018 TINYMINS.
  */
 
-var errors = require("eslint-config-airbnb-base/rules/errors");
+var assign = require("object.assign");
+var ruleUtils = require("../../utils/rule.js");
+var javascriptBaseRules = require("../../javascript/plugins/base.js").rules;
 
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
@@ -28,10 +30,18 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     require.resolve("../../javascript/plugins/base"),
   ],
-  rules: {
-    // https://github.com/typescript-eslint/typescript-eslint/issues/14
-    // This is fixed in eslint v7.4.0
-    // "arrow-parens": "off",
+  rules: assign(ruleUtils.map(require("../../javascript/plugins/base.js").rules, [
+    ["@typescript-eslint/comma-spacing", "comma-spacing"],
+    ["@typescript-eslint/func-call-spacing", "func-call-spacing"],
+    ["@typescript-eslint/indent", "indent"],
+    ["@typescript-eslint/keyword-spacing", "keyword-spacing"],
+    ["@typescript-eslint/no-extra-parens", "no-extra-parens"],
+    ["@typescript-eslint/no-redeclare", "no-redeclare", ["error", { "ignoreDeclarationMerge": true }]],
+    ["@typescript-eslint/no-shadow", "no-shadow"],
+    ["@typescript-eslint/no-unused-vars", "no-unused-vars"],
+    ["@typescript-eslint/no-use-before-define", "no-use-before-define"],
+    ["@typescript-eslint/object-curly-spacing", "object-curly-spacing"],
+  ]), {
     "valid-jsdoc": ["error", {
       "requireParamType": false,
       "requireReturn": false,
@@ -45,12 +55,8 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "indent": "off",
-    "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
     "@typescript-eslint/member-delimiter-style": "error",
     "@typescript-eslint/member-ordering": "off",
-    "no-undef": "off",
-    "@typescript-eslint/no-undef": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -114,42 +120,24 @@ module.exports = {
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-extraneous-class": "error",
-    "no-extra-parens": "off",
-    "@typescript-eslint/no-extra-parens": errors.rules['no-extra-parens'] || ["off", "all", {
-      conditionalAssign: true,
-      nestedBinaryExpressions: false,
-      returnAssign: false,
-      ignoreJSX: "all", // delegate to eslint-plugin-react
-      enforceForArrowConditionals: false,
-    }],
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
     "@typescript-eslint/no-parameter-properties": "error",
-    "no-redeclare": "off",
-    "@typescript-eslint/no-redeclare": ["error", {
-      "ignoreDeclarationMerge": true,
-    }],
     "@typescript-eslint/no-require-imports": "error",
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-this-alias": "off",
     "@typescript-eslint/no-type-alias": "off",
-    // "@typescript-eslint/no-unnecessary-qualifier": "error",
-    // "@typescript-eslint/no-unnecessary-type-assertion": "error",
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "args": "none" }],
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/promise-function-async": "off",
-    // "@typescript-eslint/require-array-sort-compare": "error",
+    "@typescript-eslint/require-array-sort-compare": ["error", { "ignoreStringArrays": true }],
     "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/type-annotation-spacing": "error",
-  },
+  }),
 };
