@@ -2,6 +2,7 @@
   "name": "eslint-config-lvmcn",
   "version": "0.0.15",
   "description": "Emil's ESLint config with TypeScript support",
+  "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "javascript",
     "typescript",
     "utils",
+    "index.js",
     "README.md"
   ]
 }
