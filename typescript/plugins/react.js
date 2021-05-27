@@ -14,5 +14,7 @@ module.exports = {
   extends: [
     require.resolve("../../javascript/plugins/react"),
   ],
-  rules: {},
+  rules: {
+    "no-underscore-dangle": "off", // replaced by @typescript-eslint/naming-convention
+  },
 };
