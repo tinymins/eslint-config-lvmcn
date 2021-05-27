@@ -15,5 +15,9 @@ module.exports = {
     require.resolve("."),
     require.resolve("./plugins/react"),
   ],
+  globals: {
+    "JSX": "readonly",
+    "React": "readonly",
+  },
   rules: {},
 };
