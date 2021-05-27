@@ -29,7 +29,7 @@ module.exports = {
     "array-element-newline": "off",
     "arrow-body-style": "error",
     "arrow-parens": ["error", "as-needed", {
-      "requireForBlockBody": true,
+      requireForBlockBody: true,
     }],
     "arrow-spacing": "error",
     "block-scoped-var": "error",
@@ -37,9 +37,9 @@ module.exports = {
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "callback-return": "off",
     "camelcase": ["error", {
-      "properties": "always",
+      properties: "always",
       // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
-      "allow": ["^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$", "^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$"],
+      allow: ["^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$", "^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$"],
     }],
     "capitalized-comments": "error",
     "class-methods-use-this": "off",
@@ -73,8 +73,8 @@ module.exports = {
     "id-blacklist": "error",
     "id-length": "off",
     "id-match": ["error", "^(?:\\${0,1}[a-zA-Z0-9]*||[A-Z_0-9]+)$", {
-      "properties": true,
-      "onlyDeclarations": true,
+      properties: true,
+      onlyDeclarations: true,
     }],
     "implicit-arrow-linebreak": "off",
     // "indent-legacy": ["error", 2], // replaced by: indent

@@ -48,7 +48,7 @@ module.exports = {
     "react/no-unescaped-entities": "error",
     "react/no-unknown-property": "error",
     "react/sort-comp": ["error", {
-      "order": [
+      order: [
         "constructor",
         "state",
         "everything-else",

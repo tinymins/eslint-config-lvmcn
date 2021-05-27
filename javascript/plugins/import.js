@@ -29,7 +29,7 @@ module.exports = {
     "import/no-cycle": "off",
     // allow optionalDependencies
     "import/no-extraneous-dependencies": ["error", {
-      "optionalDependencies": ["test/unit/index.js"]
+      optionalDependencies: ["test/unit/index.js"]
     }],
     // allow single export
     "import/prefer-default-export": "off",

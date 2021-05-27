@@ -48,29 +48,29 @@ module.exports = {
     "vue/html-closing-bracket-spacing": "error",
     "vue/html-end-tags": "error",
     "vue/html-indent": ["error", 2, {
-      "attribute": 1,
-      "closeBracket": 0,
-      "ignores": []
+      attribute: 1,
+      closeBracket: 0,
+      ignores: []
     }],
     "vue/html-quotes": ["error", "double"],
     "vue/html-self-closing": ["error", {
-      "html": {
-        "normal": "never",
-        "void": "never",
-        "component": "never"
+      html: {
+        normal: "never",
+        void: "never",
+        component: "never"
       },
-      "svg": "always",
-      "math": "always",
+      svg: "always",
+      math: "always",
     }],
     "vue/jsx-uses-vars": "error",
     "vue/key-spacing": "error",
     // "vue/keyword-spacing": "error",
     "vue/match-component-file-name": "error",
     "vue/max-attributes-per-line": ["error", {
-      "singleline": 10,
-      "multiline": {
-        "max": 2,
-        "allowFirstLine": false
+      singleline: 10,
+      multiline: {
+        max: 2,
+        allowFirstLine: false
       },
     }],
     "vue/multiline-html-element-content-newline": "off",
@@ -89,8 +89,8 @@ module.exports = {
     "vue/no-multi-spaces": "error",
     "vue/no-parsing-error": "error",
     "vue/no-reserved-keys": ["error", {
-      "reserved": ["$el", "$nextTick", "$route", "$router", "asyncData"],
-      "groups": [],
+      reserved: ["$el", "$nextTick", "$route", "$router", "asyncData"],
+      groups: [],
     }],
     "vue/no-restricted-syntax": "error",
     "vue/no-shared-component-data": "error",
@@ -105,7 +105,7 @@ module.exports = {
     "vue/no-v-html": "off",
     "vue/object-curly-spacing": ["error", "always"],
     "vue/order-in-components": ["error", {
-      "order": [
+      order: [
         ["name", "delimiters", "functional", "model"],
         ["components", "directives", "filters"],
         ["parent", "mixins", "extends", "provide", "inject"],
