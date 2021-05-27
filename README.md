@@ -18,7 +18,7 @@ npm i -D eslint-config-lvmcn
   // ...
   extends: [
     // See possible ${importPath} list in `Requirement` chapter below.
-    'lvmcn/${importPath}',
+    "lvmcn/${importPath}",
   ],
   // ...
 }
@@ -27,16 +27,16 @@ npm i -D eslint-config-lvmcn
 {
   // ...
   extends: [
-    'lvmcn/javascript/react',
-    'rules': {
+    "lvmcn/javascript/react",
+    "rules": {
       // your custom override rules for javascript...
     },
   ],
   overrides: [
     {
-      files: ['*.ts', '*.tsx', '*.tx'],
-      extends: ['lvmcn/typescript/react'],
-      'rules': {
+      files: ["*.ts", "*.tsx", "*.tx"],
+      extends: ["lvmcn/typescript/react"],
+      "rules": {
         // your custom override rules for typescript...
       },
     }

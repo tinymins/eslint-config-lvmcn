@@ -19,7 +19,7 @@ var assign = require("object.assign");
  */
 function mergeRules(rule, merger) {
   // "error", "warn", "off"
-  if (typeof rule === 'string') {
+  if (typeof rule === "string") {
     rule = [rule];
   }
   // apply mapper

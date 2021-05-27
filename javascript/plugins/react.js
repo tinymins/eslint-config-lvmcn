@@ -6,8 +6,8 @@
  * @copyright: Copyright (c) 2018 TINYMINS.
  */
 
-var assign = require('object.assign');
-var base = require('./base.js');
+var assign = require("object.assign");
+var base = require("./base.js");
 
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
@@ -20,10 +20,10 @@ module.exports = {
   rules: {
     "camelcase": ["error", assign(
       {},
-      base.rules['camelcase'][1],
+      base.rules["camelcase"][1],
       {
         // allow UNSAFE_XXX
-        "allow": base.rules['camelcase'][1].allow.concat(["^UNSAFE_"]),
+        "allow": base.rules["camelcase"][1].allow.concat(["^UNSAFE_"]),
       },
     )],
     "class-methods-use-this": "off",
