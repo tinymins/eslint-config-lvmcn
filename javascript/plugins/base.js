@@ -78,7 +78,30 @@ module.exports = {
     }],
     "implicit-arrow-linebreak": "off",
     // "indent-legacy": ["error", 2], // replaced by: indent
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": ["error", 2, {
+      SwitchCase: 1,
+      VariableDeclarator: 1,
+      outerIIFEBody: 1,
+      // MemberExpression: null,
+      FunctionDeclaration: {
+        parameters: 1,
+        body: 1
+      },
+      FunctionExpression: {
+        parameters: 1,
+        body: 1
+      },
+      CallExpression: {
+        arguments: 1
+      },
+      ArrayExpression: 1,
+      ObjectExpression: 1,
+      ImportDeclaration: 1,
+      flatTernaryExpressions: false,
+      // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
+      ignoredNodes: ["JSXElement", "JSXElement > *", "JSXAttribute", "JSXIdentifier", "JSXNamespacedName", "JSXMemberExpression", "JSXSpreadAttribute", "JSXExpressionContainer", "JSXOpeningElement", "JSXClosingElement", "JSXFragment", "JSXOpeningFragment", "JSXClosingFragment", "JSXText", "JSXEmptyExpression", "JSXSpreadChild"],
+      ignoreComments: false,
+    }],
     "init-declarations": "off",
     "jsx-quotes": "error",
     "key-spacing": "error",
@@ -91,12 +114,13 @@ module.exports = {
     "max-classes-per-file": "off",
     "max-depth": ["error", { "max": 5 }],
     "max-len": ["error", {
-      "code": 140,
-      "ignoreTrailingComments": true,
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true,
-      "ignoreUrls": true,
-      "ignoreComments": true
+      code: 140,
+      ignoreComments: true,
+      ignoreTrailingComments: true,
+      ignoreUrls: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+      ignoreRegExpLiterals: true,
     }],
     "max-lines-per-function": "off",
     "max-lines": "off",
