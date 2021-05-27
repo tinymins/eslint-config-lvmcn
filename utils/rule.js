@@ -15,7 +15,7 @@ var objectUtils = require('./object.js');
  *                1. {Function} mapper receives raw rule and should return mapped rule;
  *                2. {Array} rule data to be merged;
  *                3. {String | Number} rule report level to be merged;
- * @returns Merged rules
+ * @returns Merged rule
  */
 function mergeRules(rule, merger) {
   // "error", "warn", "off", 0, 1, 2
