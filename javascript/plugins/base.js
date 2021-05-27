@@ -153,7 +153,13 @@ module.exports = {
     "no-extra-bind": "error",
     "no-extra-boolean-cast": "error",
     "no-extra-label": "error",
-    "no-extra-parens": "error",
+    "no-extra-parens": ["error", "all", {
+      conditionalAssign: true,
+      nestedBinaryExpressions: false,
+      returnAssign: false,
+      ignoreJSX: "all", // delegate to eslint-plugin-react
+      enforceForArrowConditionals: false,
+    }],
     "no-extra-semi": "error",
     // "no-extra-strict": "error", // replaced by: strict
     "no-fallthrough": "error",
@@ -277,7 +283,7 @@ module.exports = {
     // "no-wrap-func": "error", // replaced by: no-extra-parens
     "nonblock-statement-body-position": "error",
     "object-curly-newline": ["error", { "consistent": true }],
-    "object-curly-spacing": "error",
+    "object-curly-spacing": ["error", "always"],
     "object-property-newline": "error",
     "object-shorthand": "error",
     "one-var-declaration-per-line": ["error", "initializations"],
