@@ -14,5 +14,7 @@ module.exports = {
   extends: [
     require.resolve("../../javascript/plugins/unicorn"),
   ],
-  rules: {},
+  rules: {
+    "unicorn/prefer-default-parameters": "off", // conflict with typescript optional parameter
+  },
 };
