@@ -16,6 +16,7 @@ module.exports = {
   ],
   rules: {
     "unicorn/consistent-destructuring": "off",
+    "unicorn/consistent-function-scoping": "off",
     "unicorn/import-style": "off",
     "unicorn/no-null": "off",
     "unicorn/numeric-separators-style": "off",
