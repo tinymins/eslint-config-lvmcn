@@ -6,7 +6,7 @@
  * @copyright: Copyright (c) 2018 TINYMINS.
  */
 
-var assign = require("object.assign");
+var utils = require('./utils.js');
 
 /**
  * Merge eslint rule
@@ -14,7 +14,7 @@ var assign = require("object.assign");
  * @param {array} merger Rule merger, it can be:
  *                1. {Function} mapper receives raw rule and should return mapped rule;
  *                2. {Array} rule data to be merged;
- *                3. {Object} rule options to be merged;
+ *                3. {String} rule report level to be merged;
  * @returns Merged rules
  */
 function mergeRules(rule, merger) {
@@ -26,10 +26,11 @@ function mergeRules(rule, merger) {
   if (typeof merger === "function") {
     rule = merger(rule);
   } else if (Array.isArray(merger)) {
-    rule[0] = merger[0] || rule[0];
-    rule[1] = assign({}, rule[1], merger[1]);
-  } else if (typeof merger === "object") {
-    rule[1] = assign({}, rule[1], merger);
+    for (var i = 0; i < Math.max(merger.length, rule.length); i++) {
+      rule[i] = utils.merge(rule[i], merger[i]);
+    }
+  } else if (typeof merger === "string") {
+    rule[0] = merger;
   }
   return rule;
 }
