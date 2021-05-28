@@ -15,6 +15,12 @@ module.exports = {
     "plugin:unicorn/recommended",
   ],
   rules: {
+    "unicorn/catch-error-name": ["error", {
+      "ignore": [
+        /^error\d*$/,
+        /^.+Error/
+      ]
+    }],
     "unicorn/consistent-destructuring": "off",
     "unicorn/consistent-function-scoping": "off",
     "unicorn/import-style": "off",
