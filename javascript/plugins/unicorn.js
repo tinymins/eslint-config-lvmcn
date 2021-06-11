@@ -15,6 +15,12 @@ module.exports = {
     "plugin:unicorn/recommended",
   ],
   rules: {
+    "array-callback-return": ["error", {
+      "allowImplicit": true,
+    }],
+    "consistent-return": ["error", {
+      "treatUndefinedAsUnspecified": true,
+    }],
     "unicorn/catch-error-name": ["error", {
       "ignore": [
         /^error\d*$/,
