@@ -47,6 +47,7 @@ module.exports = {
       requireReturn: false,
       requireReturnType: false,
     }],
+    "consistent-return": "off",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/ban-ts-comment": "error",
