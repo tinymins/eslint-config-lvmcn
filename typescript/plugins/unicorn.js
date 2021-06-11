@@ -15,7 +15,7 @@ module.exports = {
     require.resolve("../../javascript/plugins/unicorn"),
   ],
   rules: {
-    "consistent-return": "off",
+    "unicorn/no-useless-undefined": "error",
     "unicorn/prefer-default-parameters": "off", // conflict with typescript optional parameter
   },
 };

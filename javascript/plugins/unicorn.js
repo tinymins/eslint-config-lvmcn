@@ -15,12 +15,6 @@ module.exports = {
     "plugin:unicorn/recommended",
   ],
   rules: {
-    "array-callback-return": ["error", {
-      "allowImplicit": true,
-    }],
-    "consistent-return": ["error", {
-      "treatUndefinedAsUnspecified": true,
-    }],
     "unicorn/catch-error-name": ["error", {
       "ignore": [
         /^error\d*$/,
@@ -31,6 +25,7 @@ module.exports = {
     "unicorn/consistent-function-scoping": "off",
     "unicorn/import-style": "off",
     "unicorn/no-null": "off",
+    "unicorn/no-useless-undefined": "off",
     "unicorn/numeric-separators-style": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prevent-abbreviations": "off",

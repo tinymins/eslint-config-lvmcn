@@ -25,7 +25,9 @@ module.exports = {
     "accessor-pairs": "error",
     "array-bracket-newline": "error",
     "array-bracket-spacing": "error",
-    "array-callback-return": "error",
+    "array-callback-return": ["error", {
+      "allowImplicit": true,
+    }],
     "array-element-newline": "off",
     "arrow-body-style": "error",
     "arrow-parens": ["error", "as-needed", {
@@ -48,7 +50,9 @@ module.exports = {
     "comma-style": "error",
     "complexity": ["error", { "max": 50 }],
     "computed-property-spacing": "error",
-    "consistent-return": "error",
+    "consistent-return": ["error", {
+      "treatUndefinedAsUnspecified": true,
+    }],
     "consistent-this": "off",
     "constructor-super": "error",
     "curly": ["error", "all"],
