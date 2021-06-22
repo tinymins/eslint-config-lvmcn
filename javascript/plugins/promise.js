@@ -15,6 +15,9 @@ module.exports = {
     "plugin:promise/recommended",
   ],
   rules: {
+    "promise/catch-or-return": ["error", {
+      allowThen: true,
+    }],
     "promise/no-nesting": "off",
     "promise/no-promise-in-callback": "off",
     "promise/no-callback-in-promise": "off",
