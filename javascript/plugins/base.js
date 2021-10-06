@@ -118,7 +118,7 @@ module.exports = {
     "max-classes-per-file": "off",
     "max-depth": ["error", { "max": 5 }],
     "max-len": ["error", {
-      code: 140,
+      code: 200,
       ignoreComments: true,
       ignoreTrailingComments: true,
       ignoreUrls: true,
