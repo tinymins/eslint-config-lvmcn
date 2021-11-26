@@ -34,6 +34,7 @@ module.exports = {
     ["@typescript-eslint/func-call-spacing", "func-call-spacing"],
     ["@typescript-eslint/indent", "indent"],
     ["@typescript-eslint/keyword-spacing", "keyword-spacing"],
+    ["@typescript-eslint/no-duplicate-imports", "no-duplicate-imports"],
     ["@typescript-eslint/no-extra-parens", "no-extra-parens"],
     ["@typescript-eslint/no-redeclare", "no-redeclare", ["error", { ignoreDeclarationMerge: true }]],
     ["@typescript-eslint/no-shadow", "no-shadow"],
