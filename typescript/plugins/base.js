@@ -43,12 +43,13 @@ module.exports = {
     ["@typescript-eslint/object-curly-spacing", "object-curly-spacing"],
     ["@typescript-eslint/space-infix-ops", "space-infix-ops"],
   ]), {
+    "consistent-return": "off",
+    "no-spaced-func": "off",
     "valid-jsdoc": ["error", {
       requireParamType: false,
       requireReturn: false,
       requireReturnType: false,
     }],
-    "consistent-return": "off",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/ban-ts-comment": "error",
