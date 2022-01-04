@@ -6,44 +6,44 @@
 
 1. Install config package.
 
-```shell
-npm i -D eslint-config-lvmcn
-```
+    ```shell
+    npm i -D eslint-config-lvmcn
+    ```
 
 2. Edit your eslint config file.
 
-```js
-// like this
-{
-  // ...
-  extends: [
-    // See possible ${importPath} list in `Requirement` chapter below.
-    "lvmcn/${importPath}",
-  ],
-  // ...
-}
-
-// For example, if you have a typescript react project:
-{
-  // ...
-  extends: [
-    "lvmcn/javascript/react",
-    "rules": {
-      // your custom override rules for javascript...
-    },
-  ],
-  overrides: [
+    ```js
+    // like this
     {
-      files: ["*.ts", "*.tsx", "*.tx"],
-      extends: ["lvmcn/typescript/react"],
-      "rules": {
-        // your custom override rules for typescript...
-      },
+      // ...
+      extends: [
+        // See possible ${importPath} list in `Requirement` chapter below.
+        "lvmcn/${importPath}",
+      ],
+      // ...
     }
-  ],
-  // ...
-}
-```
+
+    // For example, if you have a typescript react project:
+    {
+      // ...
+      extends: [
+        "lvmcn/javascript/react",
+        "rules": {
+          // your custom override rules for javascript...
+        },
+      ],
+      overrides: [
+        {
+          files: ["*.ts", "*.tsx", "*.tx"],
+          extends: ["lvmcn/typescript/react"],
+          "rules": {
+            // your custom override rules for typescript...
+          },
+        }
+      ],
+      // ...
+    }
+    ```
 
 ## Requirement
 
