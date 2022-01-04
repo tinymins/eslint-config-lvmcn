@@ -22,16 +22,16 @@ module.exports = {
         // Absolute imports and other imports such as Vue-style `@/foo`.
         // Anything not matched in another group.
         [
-          "^@/config/",
-          "^@/enums/",
-          "^@/assets/",
-          "^@/utils/",
-          "^@/router/",
-          "^@/route/",
-          "^@/api/",
-          "^@/store/",
-          "^@/components/",
-          "^@/pages/",
+          "^@/config(?:/|$)",
+          "^@/enums(?:/|$)",
+          "^@/assets(?:/|$)",
+          "^@/utils(?:/|$)",
+          "^@/router(?:/|$)",
+          "^@/route(?:/|$)",
+          "^@/api(?:/|$)",
+          "^@/store(?:/|$)",
+          "^@/components(?:/|$)",
+          "^@/pages(?:/|$)",
           "^",
         ],
         // Relative imports.
