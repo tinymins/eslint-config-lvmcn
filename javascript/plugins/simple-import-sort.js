@@ -22,6 +22,7 @@ module.exports = {
         // Absolute imports and other imports such as Vue-style `@/foo`.
         // Anything not matched in another group.
         [
+          "^@/types(?:/|$)",
           "^@/config(?:/|$)",
           "^@/enums(?:/|$)",
           "^@/assets(?:/|$)",
