@@ -16,5 +16,6 @@ module.exports = {
   ],
   rules: {
     "no-underscore-dangle": "off", // replaced by @typescript-eslint/naming-convention
+    "react/require-default-props": "off",
   },
 };
