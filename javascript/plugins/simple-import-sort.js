@@ -33,6 +33,7 @@ module.exports = {
           "^@/store(?:/|$)",
           "^@/components(?:/|$)",
           "^@/pages(?:/|$)",
+          "^@/app(?:/|$)",
           "^",
         ],
         // Relative imports.
