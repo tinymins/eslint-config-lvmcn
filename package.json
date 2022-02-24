@@ -14,8 +14,9 @@
     "config",
     "eslintconfig",
     "javascript",
-    "styleguide",
-    "typescript"
+    "typescript",
+    "json",
+    "styleguide"
   ],
   "author": "Emil Zhai",
   "license": "MIT",
@@ -32,6 +33,7 @@
   "files": [
     "javascript",
     "typescript",
+    "json",
     "utils",
     "index.js",
     "README.md"
