@@ -76,7 +76,7 @@ module.exports = {
     "handle-callback-err": "error",
     "id-blacklist": "error",
     "id-length": "off",
-    "id-match": ["error", "^(?:\\${0,1}[a-zA-Z0-9]*||[A-Z_0-9]+)$", {
+    "id-match": ["error", "^(?:_*\\$*[a-zA-Z0-9]*\\$*_*||[A-Z_0-9$]+)$", {
       properties: true,
       onlyDeclarations: true,
     }],
