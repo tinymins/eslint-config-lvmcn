@@ -19,6 +19,8 @@ module.exports = {
     "ecmaVersion": 2020,
   },
   rules: {
+    "no-undefined": "off",
+    "no-void": ["error", { "allowAsStatement": true }],
     "node/no-missing-import": ["error", {
       "allowModules": [
         "vscode",

@@ -283,7 +283,7 @@ module.exports = {
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
     "no-undef": "error",
-    "no-undefined": "off",
+    "no-undefined": "error",
     "no-underscore-dangle": ["error", {
       allow: [],
       allowAfterThis: false,
@@ -309,7 +309,7 @@ module.exports = {
     "no-useless-rename": "error",
     "no-useless-return": "error",
     "no-var": "error",
-    "no-void": ["error", { "allowAsStatement": true }],
+    "no-void": "off",
     "no-warning-comments": "off",
     "no-whitespace-before-property": "error",
     "no-with": "error",
