@@ -45,6 +45,7 @@ module.exports = {
   ]), {
     "consistent-return": "off",
     "no-spaced-func": "off",
+    "no-undef": "off",
     "valid-jsdoc": ["error", {
       requireParamType: false,
       requireReturn: false,
