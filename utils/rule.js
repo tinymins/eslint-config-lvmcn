@@ -6,6 +6,8 @@
  * @copyright: Copyright (c) 2018 TINYMINS.
  */
 
+var clone = require('clone');
+
 var objectUtils = require('./object.js');
 
 /**
@@ -52,7 +54,7 @@ function mapRules(rules, maps) {
     var sname = map[1];
     var dname = map[0];
     var mapper = map[2];
-    var rule = rules[sname];
+    var rule = clone(rules[sname]);
     if (rule) {
       rule = mergeRules(rule, mapper);
     }
