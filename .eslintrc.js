@@ -59,6 +59,7 @@ module.exports = {
         'quote-props': ['error', 'consistent-as-needed'],
         'vars-on-top': 'off',
         'import/extensions': ['error', 'always'],
+        'node/global-require': 'off',
         'unicorn/no-for-loop': 'off',
         'unicorn/prefer-spread': 'off'
       }

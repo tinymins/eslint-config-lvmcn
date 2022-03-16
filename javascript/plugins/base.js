@@ -70,7 +70,7 @@ module.exports = {
     'generator-star-spacing': 'error',
     // 'generator-star': 'error', // replaced by: generator-star-spacing
     'getter-return': 'error',
-    'global-require': 'error',
+    'global-require': 'off', // @deprecated, replaced by: node/global-require
     // 'global-strict': 'error', // strict
     'guard-for-in': 'error',
     'handle-callback-err': 'error',

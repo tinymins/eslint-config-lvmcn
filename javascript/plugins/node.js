@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'no-undefined': 'off',
     'no-void': ['error', { allowAsStatement: true }],
+    'node/global-require': ['error'],
     'node/no-missing-import': ['error', {
       allowModules: [
         'vscode'
