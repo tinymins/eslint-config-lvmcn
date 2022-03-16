@@ -7,17 +7,12 @@
  */
 
 // http://eslint.org/docs/user-guide/configuring
-/**
- * TypeScript common files.
- */
 module.exports = {
+  plugins: [
+    "simple-import-sort",
+  ],
   extends: [
-    require.resolve("./base"),
-    require.resolve("./plugins/import"),
-    require.resolve("./plugins/simple-import-sort"),
-    require.resolve("./plugins/promise"),
-    require.resolve("./plugins/unicorn"),
-    require.resolve("./plugins/unused-imports"),
+    require.resolve("../../javascript/plugins/simple-import-sort"),
   ],
   rules: {},
 };
