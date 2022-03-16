@@ -63,13 +63,10 @@ module.exports = {
     "@typescript-eslint/member-ordering": "off",
     "@typescript-eslint/naming-convention": [
       "error",
-      {
-        selector: [
-          "property", // matches any object, class, or object type property. Does not match properties that have direct function expression or arrow function expression values.
-        ],
+      { // matches any object, class, or object type property. Does not match properties that have direct function expression or arrow function expression values.
+        selector: ["property"],
         format: ["camelCase", "PascalCase", "UPPER_CASE"],
         filter: {
-          // you can expand this regex as you find more cases that require quoting that you want to allow
           // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
           regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
           match: false
@@ -77,22 +74,22 @@ module.exports = {
         leadingUnderscore: "allow",
         trailingUnderscore: "forbid",
       },
-      {
-        selector: [
-          "variable", // matches any var / let / const variable name.
-          "parameterProperty", // matches any parameter property.
-        ],
+      { // matches any var / let / const variable name.
+        selector: ["variable"],
         format: ["camelCase", "PascalCase", "UPPER_CASE"],
         leadingUnderscore: "forbid",
         trailingUnderscore: "forbid",
       },
-      {
-        selector: [
-          "objectLiteralMethod", // matches any object literal method. Also matches properties that have direct function expression or arrow function expression values. Does not match accessors.
-        ],
+      { // matches any parameter property.
+        selector: ["parameterProperty"],
+        format: ["camelCase", "PascalCase", "UPPER_CASE"],
+        leadingUnderscore: "forbid",
+        trailingUnderscore: "forbid",
+      },
+      { // matches any object literal method. Also matches properties that have direct function expression or arrow function expression values. Does not match accessors.
+        selector: ["objectLiteralMethod"],
         format: ["camelCase", "PascalCase"],
         filter: {
-          // you can expand this regex as you find more cases that require quoting that you want to allow
           // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
           regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
           match: false
@@ -100,15 +97,10 @@ module.exports = {
         leadingUnderscore: "allow",
         trailingUnderscore: "forbid",
       },
-      {
-        selector: [
-          "function", // matches any named function declaration or named function expression.
-          "method", // matches any object, class, or object type method. Also matches properties that have direct function expression or arrow function expression values. Does not match accessors.
-          "accessor", // matches any accessor.
-        ],
+      { // matches any named function declaration or named function expression.
+        selector: ["function"],
         format: ["camelCase", "PascalCase"],
         filter: {
-          // you can expand this regex as you find more cases that require quoting that you want to allow
           // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
           regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
           match: false
@@ -116,13 +108,32 @@ module.exports = {
         leadingUnderscore: "forbid",
         trailingUnderscore: "forbid",
       },
-      {
-        selector: [
-          "parameter", // matches any function parameter. Does not match parameter properties.
-        ],
+      { // matches any object, class, or object type method. Also matches properties that have direct function expression or arrow function expression values. Does not match accessors.
+        selector: ["method"],
         format: ["camelCase", "PascalCase"],
         filter: {
-          // you can expand this regex as you find more cases that require quoting that you want to allow
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
+          match: false
+        },
+        leadingUnderscore: "forbid",
+        trailingUnderscore: "forbid",
+      },
+      { // matches any accessor.
+        selector: ["accessor"],
+        format: ["camelCase", "PascalCase"],
+        filter: {
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: "(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
+          match: false
+        },
+        leadingUnderscore: "forbid",
+        trailingUnderscore: "forbid",
+      },
+      { // matches any function parameter. Does not match parameter properties.
+        selector: ["parameter"],
+        format: ["camelCase", "PascalCase"],
+        filter: {
           // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
           regex: "(^_+\\d*$|^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)",
           match: false
@@ -130,20 +141,28 @@ module.exports = {
         leadingUnderscore: "forbid",
         trailingUnderscore: "forbid",
       },
-      {
-        selector: [
-          "class", // matches any class declaration.
-          "interface", // matches any interface declaration.
-          "typeAlias", // matches any type alias declaration.
-          "typeParameter", // matches any generic type parameter declaration.
-        ],
+      { // matches any class declaration.
+        selector: ["class"],
         format: ["PascalCase"],
       },
-      {
-        selector: [
-          "enum", // matches any enum declaration.
-          "enumMember", // matches any enum member.
-        ],
+      { // matches any interface declaration.
+        selector: ["interface"],
+        format: ["PascalCase"],
+      },
+      { // matches any type alias declaration.
+        selector: ["typeAlias"],
+        format: ["PascalCase"],
+      },
+      { // matches any generic type parameter declaration.
+        selector: ["typeParameter"],
+        format: ["PascalCase"],
+      },
+      { // matches any enum declaration.
+        selector: ["enum"],
+        format: ["PascalCase", "UPPER_CASE"],
+      },
+      { // matches any enum member.
+        selector: ["enumMember"],
         format: ["PascalCase", "UPPER_CASE"],
       },
     ],
