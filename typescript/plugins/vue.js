@@ -9,10 +9,10 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "vue",
+    'vue'
   ],
   extends: [
-    require.resolve("../../javascript/plugins/vue"),
+    require.resolve('../../javascript/plugins/vue')
   ],
-  rules: {},
+  rules: {}
 };

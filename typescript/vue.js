@@ -12,8 +12,8 @@
  */
 module.exports = {
   extends: [
-    require.resolve("."),
-    require.resolve("./plugins/vue"),
+    require.resolve('.'),
+    require.resolve('./plugins/vue')
   ],
-  rules: {},
+  rules: {}
 };

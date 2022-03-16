@@ -9,30 +9,30 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "node",
+    'node'
   ],
   extends: [
-    "plugin:node/recommended",
+    'plugin:node/recommended'
   ],
-  "parserOptions": {
+  parserOptions: {
     // Only ESLint 6.2.0 and later support ES2020.
-    "ecmaVersion": 2020,
+    ecmaVersion: 2020
   },
   rules: {
-    "no-undefined": "off",
-    "no-void": ["error", { "allowAsStatement": true }],
-    "node/no-missing-import": ["error", {
-      "allowModules": [
-        "vscode",
+    'no-undefined': 'off',
+    'no-void': ['error', { allowAsStatement: true }],
+    'node/no-missing-import': ['error', {
+      allowModules: [
+        'vscode'
       ],
-      "tryExtensions": [".js", ".jsx", ".mjs", ".json", ".ts", ".tx", ".tsx", ".node"]
+      tryExtensions: ['.js', '.jsx', '.mjs', '.json', '.ts', '.tx', '.tsx', '.node']
     }],
-    "node/no-unsupported-features/es-syntax": [
-      "error",
+    'node/no-unsupported-features/es-syntax': [
+      'error',
       {
-        "version": ">=12.0.0",
-        "ignores": ["modules"]
-      },
-    ],
-  },
+        version: '>=12.0.0',
+        ignores: ['modules']
+      }
+    ]
+  }
 };

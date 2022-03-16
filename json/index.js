@@ -12,7 +12,7 @@
  */
 module.exports = {
   extends: [
-    require.resolve("./base"),
+    require.resolve('./base')
   ],
-  rules: {},
+  rules: {}
 };

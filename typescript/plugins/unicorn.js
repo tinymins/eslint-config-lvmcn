@@ -9,13 +9,13 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "unicorn",
+    'unicorn'
   ],
   extends: [
-    require.resolve("../../javascript/plugins/unicorn"),
+    require.resolve('../../javascript/plugins/unicorn')
   ],
   rules: {
-    "unicorn/no-useless-undefined": "error",
-    "unicorn/prefer-default-parameters": "off", // conflict with typescript optional parameter
-  },
+    'unicorn/no-useless-undefined': 'error',
+    'unicorn/prefer-default-parameters': 'off' // conflict with typescript optional parameter
+  }
 };

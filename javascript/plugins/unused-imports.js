@@ -9,9 +9,9 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "unused-imports",
+    'unused-imports'
   ],
   rules: {
-    "unused-imports/no-unused-imports": "error",
-  },
+    'unused-imports/no-unused-imports': 'error'
+  }
 };

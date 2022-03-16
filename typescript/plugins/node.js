@@ -9,10 +9,10 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "node",
+    'node'
   ],
   extends: [
-    require.resolve("../../javascript/plugins/node"),
+    require.resolve('../../javascript/plugins/node')
   ],
-  rules: {},
+  rules: {}
 };

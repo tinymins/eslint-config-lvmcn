@@ -9,13 +9,13 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "react",
+    'react'
   ],
   extends: [
-    require.resolve("../../javascript/plugins/react"),
+    require.resolve('../../javascript/plugins/react')
   ],
   rules: {
-    "no-underscore-dangle": "off", // replaced by @typescript-eslint/naming-convention
-    "react/require-default-props": "off",
-  },
+    'no-underscore-dangle': 'off', // replaced by @typescript-eslint/naming-convention
+    'react/require-default-props': 'off'
+  }
 };

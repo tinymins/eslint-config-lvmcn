@@ -9,29 +9,29 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "import",
+    'import'
   ],
   extends: [
-    require.resolve("eslint-config-airbnb-base/rules/imports"),
+    require.resolve('eslint-config-airbnb-base/rules/imports')
   ],
   rules: {
     // don"t require extension when importing
-    "import/extensions": ["error", "always", {
-      "js": "never",
-      "jsx": "never",
-      "jx": "never",
-      "ts": "never",
-      "tsx": "never",
-      "tx": "never",
-      "vue": "never",
+    'import/extensions': ['error', 'always', {
+      js: 'never',
+      jsx: 'never',
+      jx: 'never',
+      ts: 'never',
+      tsx: 'never',
+      tx: 'never',
+      vue: 'never'
     }],
     // "import/no-cycle": ["error", { maxDepth: 1 }],
-    "import/no-cycle": "off",
+    'import/no-cycle': 'off',
     // allow optionalDependencies
-    "import/no-extraneous-dependencies": ["error", {
-      optionalDependencies: ["test/unit/index.js"]
+    'import/no-extraneous-dependencies': ['error', {
+      optionalDependencies: ['test/unit/index.js']
     }],
     // allow single export
-    "import/prefer-default-export": "off",
-  },
+    'import/prefer-default-export': 'off'
+  }
 };

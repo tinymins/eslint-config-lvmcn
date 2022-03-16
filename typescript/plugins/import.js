@@ -9,10 +9,10 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "import",
+    'import'
   ],
   extends: [
-    require.resolve("../../javascript/plugins/import"),
+    require.resolve('../../javascript/plugins/import')
   ],
-  rules: {},
+  rules: {}
 };

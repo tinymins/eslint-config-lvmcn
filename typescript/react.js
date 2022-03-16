@@ -12,12 +12,12 @@
  */
 module.exports = {
   extends: [
-    require.resolve("."),
-    require.resolve("./plugins/react"),
+    require.resolve('.'),
+    require.resolve('./plugins/react')
   ],
   globals: {
-    "JSX": "readonly",
-    "React": "readonly",
+    JSX: 'readonly',
+    React: 'readonly'
   },
-  rules: {},
+  rules: {}
 };

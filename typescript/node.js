@@ -12,10 +12,10 @@
  */
 module.exports = {
   extends: [
-    require.resolve("."),
-    require.resolve("./plugins/node"),
+    require.resolve('.'),
+    require.resolve('./plugins/node')
   ],
   rules: {
-    "unicorn/prefer-module": "off",
-  },
+    'unicorn/prefer-module': 'off'
+  }
 };

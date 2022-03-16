@@ -9,17 +9,17 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "promise",
+    'promise'
   ],
   extends: [
-    "plugin:promise/recommended",
+    'plugin:promise/recommended'
   ],
   rules: {
-    "promise/catch-or-return": ["error", {
-      allowThen: true,
+    'promise/catch-or-return': ['error', {
+      allowThen: true
     }],
-    "promise/no-nesting": "off",
-    "promise/no-promise-in-callback": "off",
-    "promise/no-callback-in-promise": "off",
-  },
+    'promise/no-nesting': 'off',
+    'promise/no-promise-in-callback': 'off',
+    'promise/no-callback-in-promise': 'off'
+  }
 };

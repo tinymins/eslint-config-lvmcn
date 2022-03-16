@@ -9,10 +9,10 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "simple-import-sort",
+    'simple-import-sort'
   ],
   extends: [
-    require.resolve("../../javascript/plugins/simple-import-sort"),
+    require.resolve('../../javascript/plugins/simple-import-sort')
   ],
-  rules: {},
+  rules: {}
 };

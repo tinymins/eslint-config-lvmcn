@@ -9,9 +9,9 @@
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
   plugins: [
-    "json",
+    'json'
   ],
   extends: [
-    "plugin:json/recommended",
-  ],
+    'plugin:json/recommended'
+  ]
 };
