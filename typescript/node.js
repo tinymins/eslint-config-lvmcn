@@ -15,5 +15,7 @@ module.exports = {
     require.resolve("."),
     require.resolve("./plugins/node"),
   ],
-  rules: {},
+  rules: {
+    "unicorn/prefer-module": "off",
+  },
 };
