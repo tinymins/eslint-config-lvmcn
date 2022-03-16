@@ -1,9 +1,11 @@
 {
   "name": "eslint-config-lvmcn",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "description": "Emil's ESLint config with TypeScript support",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx,json}\" --format pretty"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tinymins/eslint-config-lvmcn.git"
@@ -28,8 +30,10 @@
     "clone": "^2.1.2",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
+    "for-own": "^1.0.0",
     "object.assign": "^4.1.2",
-    "object.entries": "^1.1.2"
+    "object.entries": "^1.1.2",
+    "object.map": "^1.0.1"
   },
   "files": [
     "javascript",
@@ -38,5 +42,18 @@
     "utils",
     "index.js",
     "README.md"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint": "^8.11.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unicorn": "^41.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  }
 }
