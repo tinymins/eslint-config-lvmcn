@@ -23,6 +23,12 @@ module.exports = {
     }],
     "unicorn/consistent-destructuring": "off",
     "unicorn/consistent-function-scoping": "off",
+    "unicorn/filename-case": ["error", {
+      "case": "kebabCase",
+      "ignore": [
+        /^__[a-z]+__(?:\.[a-zA-Z0-9_-]+)*$/ui
+      ]
+    }],
     "unicorn/import-style": "off",
     "unicorn/no-null": "off",
     "unicorn/no-useless-undefined": "off",
