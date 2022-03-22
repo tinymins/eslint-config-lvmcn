@@ -68,10 +68,7 @@ module.exports = {
     'vue/match-component-file-name': 'error',
     'vue/max-attributes-per-line': ['error', {
       singleline: 10,
-      multiline: {
-        max: 2,
-        allowFirstLine: false
-      }
+      multiline: 2
     }],
     'vue/multiline-html-element-content-newline': 'off',
     'vue/mustache-interpolation-spacing': ['error', 'always'],
