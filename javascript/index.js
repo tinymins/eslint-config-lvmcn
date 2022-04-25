@@ -17,8 +17,7 @@ module.exports = {
     require.resolve('./plugins/simple-import-sort'),
     require.resolve('./plugins/promise'),
     require.resolve('./plugins/unicorn'),
-    require.resolve('./plugins/unused-imports'),
-    require.resolve('./plugins/etc')
+    require.resolve('./plugins/unused-imports')
   ],
   rules: {}
 };

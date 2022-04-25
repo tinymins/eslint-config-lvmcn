@@ -12,7 +12,9 @@ module.exports = {
     'etc'
   ],
   extends: [
-    require.resolve('../../javascript/plugins/etc')
+    'plugin:etc/recommended'
   ],
-  rules: {}
+  rules: {
+    'etc/no-commented-out-code': 'error'
+  }
 };
