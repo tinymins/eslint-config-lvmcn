@@ -56,6 +56,7 @@ module.exports = {
         'multiline-comment-style': 'off',
         'no-var': 'off',
         'prefer-arrow-callback': 'off',
+        'prefer-rest-params': 'off',
         'quote-props': ['error', 'consistent-as-needed'],
         'vars-on-top': 'off',
         'import/extensions': ['error', 'always'],
