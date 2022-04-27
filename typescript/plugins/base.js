@@ -69,8 +69,8 @@ module.exports = {
         selector: ['property'],
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
         filter: {
-          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
-          regex: '(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)',
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__` and any special chars, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: '(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$|[^a-zA-Z0-9_]|^[0-9]+$)',
           match: false
         },
         leadingUnderscore: 'allow',
@@ -92,8 +92,8 @@ module.exports = {
         selector: ['objectLiteralMethod'],
         format: ['camelCase', 'PascalCase'],
         filter: {
-          // allow `__low_case_const__` and `__UPPER_CASE_CONST__`, such as __REDUX_DEVTOOLS_EXTENSION__
-          regex: '(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$)',
+          // allow `__low_case_const__` and `__UPPER_CASE_CONST__` and any special chars, such as __REDUX_DEVTOOLS_EXTENSION__
+          regex: '(^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$|^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$|[^a-zA-Z0-9_]|^[0-9]+$)',
           match: false
         },
         leadingUnderscore: 'allow',
