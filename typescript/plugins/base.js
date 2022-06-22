@@ -16,7 +16,7 @@ var mapRules = ruleUtils.map;
 var namingConventionBaseRegexps = [
   '^__[a-z0-9](?:[a-z0-9_]*[a-z0-9]){0,1}__$', // allow `__low_case_const__`
   '^__[A-Z0-9](?:[A-Z0-9_]*[A-Z0-9]){0,1}__$', // allow `__UPPER_CASE_CONST__`
-  '[^a-zA-Z0-9_]', // allow single letter, number, underscore
+  '[^a-zA-Z0-9_]', // allow any string contains special chars (not letter, number, underscore)
   '^[0-9]+$', // allow pure number
   '^$' // allow empty string
 ];
