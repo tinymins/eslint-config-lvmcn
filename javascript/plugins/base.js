@@ -48,7 +48,7 @@ module.exports = {
     'comma-dangle': 'error',
     'comma-spacing': 'error',
     'comma-style': 'error',
-    'complexity': ['error', { max: 50 }],
+    'complexity': ['error', { max: 100 }],
     'computed-property-spacing': 'error',
     'consistent-return': ['error', {
       treatUndefinedAsUnspecified: true
