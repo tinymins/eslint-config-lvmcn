@@ -41,6 +41,7 @@ module.exports = {
     'vue/camelcase': 'error',
     'vue/comma-dangle': ['error', 'always-multiline'],
     'vue/comment-directive': 'error',
+    'vue/component-definition-name-casing': ['error', 'kebab-case'],
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     // 'vue/dot-location': 'error',
     'vue/eqeqeq': 'error',
@@ -72,10 +73,10 @@ module.exports = {
     }],
     'vue/multiline-html-element-content-newline': 'off',
     'vue/mustache-interpolation-spacing': ['error', 'always'],
-    'vue/name-property-casing': ['error', 'kebab-case'],
+    // 'vue/name-property-casing': ['error', 'kebab-case'], // replaced by vue/component-definition-name-casing
     'vue/no-async-in-computed-properties': 'error',
     'vue/no-boolean-default': 'error',
-    'vue/no-confusing-v-for-v-if': 'error',
+    // 'vue/no-confusing-v-for-v-if': 'error', // replaced by vue/no-use-v-if-with-v-for
     // 'vue/no-deprecated-scope-attribute': 'error',
     'vue/no-dupe-keys': 'error',
     'vue/no-duplicate-attributes': ['error', {
