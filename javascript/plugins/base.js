@@ -21,6 +21,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
+  plugins: [
+    'lvmcn'
+  ],
   rules: {
     'accessor-pairs': 'error',
     'array-bracket-newline': 'error',
@@ -382,6 +385,7 @@ module.exports = {
     'wrap-iife': 'error',
     'wrap-regex': 'error',
     'yield-star-spacing': 'error',
-    'yoda': 'error'
+    'yoda': 'error',
+    'lvmcn/no-single-line-comment-block': 'error'
   }
 };
