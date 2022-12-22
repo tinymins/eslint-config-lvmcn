@@ -30,7 +30,7 @@
     "clone": "^2.1.2",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-lvmcn": "0.0.3",
+    "eslint-plugin-lvmcn": "0.0.4",
     "for-own": "^1.0.0",
     "object.assign": "^4.1.2",
     "object.entries": "^1.1.2",
